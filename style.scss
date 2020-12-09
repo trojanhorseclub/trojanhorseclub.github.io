@@ -28,7 +28,86 @@
     font-display: swap;
 }
 
+.gt-america {
+	font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
+}
+.cinzel {
+	font-family: 'Cinzel', serif;
+}
+
+
+$fg: #ff0000;
 
 body {
+	background-color: #F9F9F9;
 	margin: 0;
+	font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
+	font-size: 4.5rem;
+}
+
+section {
+	padding: 30px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	-webkit-filter: drop-shadow(0 0 0.05rem rgba(0,0,0,25%));
+	filter: drop-shadow(0 0 0.05rem rgba(0,0,0,25%));
+}
+
+h2 {
+	font-size: 35px;
+}
+
+
+/* OVERLAY */
+
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	overflow: hidden;
+
+	h1 {
+		font-size: 12vw;
+		font-weight: 100;
+		text-align: center;
+		width:100%;
+		color: $fg;
+		margin: 0;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		-webkit-transform: translate3d(-50%,0%,0);
+		-moz-transform: translate3d(-50%,0%,0);
+		transform: translate3d(-50%,0%,0);
+		-webkit-filter: drop-shadow(0 0 0.25rem $fg);
+		filter: drop-shadow(0 0 0.25rem $fg);
+	}
+
+	svg {
+		width: 100vw;
+		-webkit-filter: drop-shadow(0 0 0.25rem $fg);
+		filter: drop-shadow(0 0 0.25rem $fg);
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		-webkit-transform: translate3d(-50%,-50%,0);
+		-moz-transform: translate3d(-50%,-50%,0);
+		transform: translate3d(-50%,-50%,0);
+	}
+	.cls-1 {
+		fill: $fg;
+		stroke: $fg;
+	}
+
+}
+
+.info {
+
+	.trojan {
+		font-weight: bold;
+	}
 }
