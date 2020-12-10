@@ -3,19 +3,28 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 	<title>Trojan Horse Club</title>
 
 	<link rel="stylesheet" href="style.min.css">
 </head>
 
 <body>
+	<script type="text/javascript">
+		var colorArr = ["red", "purple", "orange", "red"];
+		var getColor = colorArr[Math.floor((Math.random() * 3) + 0)];
+		document.body.classList.add("fg-" + getColor);
+	</script>
 	<div class="main_wrapper">
 
 		<main>
 			<div class="wrapper">
 
 				<div class="overlay">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345.71 483.02">
+
+					<svg id="horse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345.71 483.02">
 						<defs>
 							<style>
 								.cls-1 {
@@ -623,44 +632,96 @@
 					<p>Through subversive and deconstructive methodologies, we design towards unexpected results. With knowledge of typography, bookmaking, photography, video, programming, and generative models, we deploy an experimental approach to engage
 						with projects that relate to a wider contemporary cultural and social landscape.
 					</p>
+					<p class="portfolio">Portfolio available upon request</p>
 				</section>
 
 				<section class="contact_clients">
+					<div class="clients">
+						<h2>Clients</h2>
+						</p>
+						<ul>
+							<li>
+								<p>artconnexion <span class="country">FR</span></p>
+							</li>
+							<!-- <li>
+									<p>Anjos70 <span class="country">PT</span></</p>li> -->
+							<li>
+								<p>Carhartt WIP Magazine <span class="country">DE</span></p>
+							</li>
+							<li>
+								<p>CMLisboa <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Computer Grrrls <span class="country">NL, DE, FR</span></p>
+							</li>
+							<li>
+								<p>EDP <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Fidelidade <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>German Federal Foreign Office Shanghai <span class="country">CN</span></p>
+							</li>
+							<li>
+								<p>Gräffenberg <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Medienwerk.nrw <span class="country">DE</span></p>
+							</li>
+							<li>
+								<p>Modern Matter <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>Polimekanos <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>Promenade <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Rama em Flor <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Too Much Information <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>Schauspielhaus Bochum <span class="country">DE</span></p>
+							</li>
+							<li>
+								<p>Serpentine Galleries R&D Platform <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>Sovena <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Supra Systems Studio <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>TOPSAFE <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>TOYNO <span class="country">PT</span></p>
+							</li>
+							<li>
+								<p>Transmediale <span class="country">DE</span></p>
+							</li>
+							<li>
+								<p>V&A <span class="country">UK</span></p>
+							</li>
+							<li>
+								<p>Weizenbaum Internet Institut <span class="country">DE</span></p>
+							</li>
+							<li>
+								<p>With Company <span class="country">PT</span>
+							</li>
+						</ul>
+					</div>
+
 					<div class="contact">
 						<h2>Find us here</h2>
 						<a href="mailto:hello@trojanhorse.club">hello@trojanhorse.club</a>
-						<p>Portfolio available upon request</p>
 					</div>
-					<div class="clients">
-						<h2>Clients</h2>
-						<ul>
-							<li>artconnexion <span class="country">FR</span></li>
-							<!-- <li>Anjos70 <span class="country">PT</span></li> -->
-							<li>Carhartt WIP Magazine <span class="country">DE</span></li>
-							<li>CMLisboa <span class="country">PT</span></li>
-							<li>Computer Grrrls <span class="country">NL, DE, FR</span></li>
-							<li>EDP <span class="country">PT</span></li>
-							<li>Fidelidade <span class="country">PT</span></li>
-							<li>German Federal Foreign Office Shanghai <span class="country">CN</span></li>
-							<li>Gräffenberg <span class="country">PT</span></li>
-							<li>Medienwerk.nrw <span class="country">DE</span></li>
-							<li>Modern Matter <span class="country">UK</span></li>
-							<li>Polimekanos <span class="country">UK</span></li>
-							<li>Promenade <span class="country">PT</span></li>
-							<li>Rama em Flor <span class="country">PT</span></li>
-							<li>Too Much Information <span class="country">UK</span></li>
-							<li>Schauspielhaus Bochum <span class="country">DE</span></li>
-							<li>Serpentine Galleries R&D Platform <span class="country">UK</span></li>
-							<li>Sovena <span class="country">PT</span></li>
-							<li>Supra Systems Studio <span class="country">UK</span></li>
-							<li>TOPSAFE <span class="country">UK</span></li>
-							<li>TOYNO <span class="country">PT</span></li>
-							<li>Transmediale <span class="country">DE</span></li>
-							<li>V&A <span class="country">UK</span></li>
-							<li>Weizenbaum Internet Institut <span class="country">DE</span></li>
-							<li>With Company <span class="country">PT</span></li>
-						</ul>
-					</div>
+
 				</section>
 
 			</div>
@@ -669,12 +730,19 @@
 		<footer>
 			<div class="wrapper">
 				<div class="copyright">
-					a 2020 joint © Trojan Horse Club
+					<span>2020 © Trojan Horse Club</span>
 				</div>
 			</div>
 		</footer>
 
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			$("#horse").css("opacity", 1 - $(window).scrollTop() / 100);
+		});
+	</script>
 
 </body>
 
