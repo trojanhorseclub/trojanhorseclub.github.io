@@ -168,7 +168,7 @@ h2 {
 @media (max-width: 767px) {
   .overlay h1 {
     font-size: 24vw;
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 
@@ -199,7 +199,7 @@ h2 {
 }
 
 .info {
-  font-size: 3.7rem;
+  font-size: 3.3rem;
 }
 
 @media (max-width: 767px) {
