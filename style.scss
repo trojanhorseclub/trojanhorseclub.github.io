@@ -152,14 +152,14 @@ h2 {
 	user-select: none;
 
 	h1 {
-		font-size: 12vw;
+		font-size: 12.9vw;
 		font-weight: 100;
 		text-align: center;
 		width:100%;
 		color: var(--fg);
 		margin: 0;
 		position: absolute;
-		bottom: 5%;
+		bottom: 1%;
 		left: 50%;
 		-webkit-transform: translate3d(-50%,0%,0);
 		-moz-transform: translate3d(-50%,0%,0);
@@ -243,13 +243,14 @@ h2 {
 		.horse_img {
 			width: 100px;
 			display: inline-block;
+			margin-left: 20px;
 			@media (max-width: 767px) {
 				margin-top: 15px;
 				margin-left: -10px;
 			}
 		}
 		p {
-			margin: 0 0 0 20px;
+			margin: 0 0;
 			@media (max-width: 767px) {
 				margin: 0;
 			}
@@ -272,7 +273,7 @@ h2 {
 	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
 
-	margin-top: 70px;
+	margin-top: 20px;
 
 	@media (max-width: 767px) {
 		-webkit-box-orient: vertical;
@@ -336,8 +337,8 @@ h2 {
 
 footer {
 	position: relative;
-	padding: 70px 0 40px;
-	margin-top: 130px;
+	padding: 50px 0 40px;
+	margin-top: 7vw;
 
 	&::before {
 		content: '';
