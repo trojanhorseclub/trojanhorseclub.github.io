@@ -34,6 +34,8 @@
   --horsepurple: #a200ff;
   --horseorange: #f8a02a;
   --horsered: #ff0000;
+  overflow: hidden;
+  width: 100%;
 }
 
 body {
@@ -41,6 +43,14 @@ body {
   margin: 0;
   font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
   --fg: black;
+}
+
+@media (max-width: 767px) {
+  body {
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+  }
 }
 
 body.fg-orange {
@@ -128,6 +138,12 @@ p, h2 {
 h2 {
   font-size: 25px;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 22px;
+  }
 }
 
 /* OVERLAY */
@@ -249,7 +265,7 @@ h2 {
 
 @media (max-width: 767px) {
   .contact_clients {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -329,6 +345,13 @@ footer {
   margin-top: 7vw;
 }
 
+@media (max-width: 767px) {
+  footer {
+    margin-top: 0;
+    padding: 70px 0 37vh;
+  }
+}
+
 footer::before {
   content: '';
   position: absolute;
@@ -376,13 +399,6 @@ footer::after {
     top: 0;
     height: 45%;
     width: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  footer {
-    margin-top: 15vh;
-    padding: 70px 0 37vh;
   }
 }
 

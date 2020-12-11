@@ -56,7 +56,7 @@
 		var getColor = colorArr[Math.floor((Math.random() * 3) + 0)];
 		document.body.classList.add("fg-" + getColor);
 	</script>
-	<div class="main_wrapper">
+	<div id="main_wrapper">
 
 		<main>
 			<div class="wrapper">
@@ -791,8 +791,8 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		$(window).scroll(function() {
-			$("#horse").css("opacity", 1 - $(window).scrollTop() / 100);
+		$("body").scroll(function() {
+			$("#horse").css("opacity", 1 - $("body").scrollTop() / 100);
 		});
 	</script>
 </body>
