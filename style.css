@@ -372,7 +372,7 @@ footer::before {
   footer::before {
     right: 20px;
     top: 0;
-    height: 45%;
+    height: 37%;
     width: 40px;
   }
 }
@@ -397,7 +397,7 @@ footer::after {
   footer::after {
     right: 20px;
     top: 0;
-    height: 45%;
+    height: 37%;
     width: 40px;
   }
 }
