@@ -208,52 +208,11 @@ h2 {
 		font-weight: bold;
 	}
 	.horsefolio {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: row;
-		-moz-box-orient: horizontal;
-		-moz-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-moz-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
 
-		@media (max-width: 767px) {
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: reverse;
-			-webkit-flex-direction: column-reverse;
-			-moz-box-orient: vertical;
-			-moz-box-direction: reverse;
-			-ms-flex-direction: column-reverse;
-			flex-direction: column-reverse;
-			-webkit-box-align: start;
-			-webkit-align-items: flex-start;
-			-moz-box-align: start;
-			-ms-flex-align: start;
-			align-items: flex-start;
-		}
 		.horse_img {
 			width: 100px;
-			display: inline-block;
-			margin-left: 20px;
-			@media (max-width: 767px) {
-				margin-top: 15px;
-				margin-left: -10px;
-			}
-		}
-		p {
-			margin: 0 0;
-			@media (max-width: 767px) {
-				margin: 0;
-			}
+			display: block;
+			margin: 0 auto;
 		}
 	}
 }
@@ -285,41 +244,58 @@ h2 {
 		flex-direction: column;
 	}
 
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 
 	@media (max-width: 767px) {
 		font-size: 1.2rem;
+	}
+
+	p, span {
+		-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
+		filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
 	}
 
 	.clients {
 		width: 100%;
 		// max-width: 1300px;
 		p {
-			margin-bottom: 0.6em;
+			margin-bottom: 0.5em;
 		}
-		p, span {
-			-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-			filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-		}
-		ul {
+
+		.list {
 			padding: 0;
-		}
-		li {
-			display: inline-block;
-			margin-right: 5px;
+			-webkit-columns: 300px 3;
+			-moz-columns: 300px 3;
+			columns: 300px 3;
+			-webkit-column-gap: 5px;
+			-moz-column-gap: 5px;
+			column-gap: 5px;
+			word-wrap: break-word;
+
 			.country {
 				text-transform: uppercase;
 				vertical-align: super;
 				font-size: 0.8em;
-				font-weight: bold;
+				margin-right: 7px;
 			}
+		}
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			p {
+				display: inline-block;
+			}
+
+		}
+		.portfolio {
+			margin-top: 15px;
 		}
 	}
 
 
 	.contact {
 		width: 20%;
-		min-width: 350px;
+		min-width: 380px;
 		@media (max-width: 767px) {
 			width: 100%;
 			min-width: unset;
@@ -328,9 +304,18 @@ h2 {
 		a {
 			-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
 			filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
+			margin-bottom: 5px;
+    	display: inline-block;
+		}
+
+		p {
+			padding-top: 4px;
+			line-height: 1.3;
+			margin-bottom: 5px;
 		}
 	}
 }
+
 
 
 /* FOOTER */
