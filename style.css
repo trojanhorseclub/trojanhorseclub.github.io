@@ -42,15 +42,10 @@ body {
   background-color: #F9F9F9;
   margin: 0;
   font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
   --fg: black;
-}
-
-@media (max-width: 767px) {
-  body {
-    height: 100%;
-    position: fixed;
-    overflow: scroll;
-  }
 }
 
 body.fg-orange {

@@ -42,8 +42,8 @@
 	// --horseorange: #ff6f00;
 	--horsered: #ff0000;
 
-	overflow: hidden;
-  width: 100%;
+		overflow: hidden;
+	  width: 100%;
 }
 
 
@@ -52,11 +52,9 @@ body {
 	margin: 0;
 	font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
 
-	@media (max-width: 767px) {
 		height: 100%;
   	position: fixed;
 		overflow: scroll;
-	}
 
 	--fg: black;
 
