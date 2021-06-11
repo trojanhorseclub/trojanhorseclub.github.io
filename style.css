@@ -48,6 +48,14 @@ body {
   --fg: black;
 }
 
+@media (max-width: 767px) {
+  body {
+    max-height: -webkit-calc(100 * var(--vh));
+    max-height: -moz-calc(100 * var(--vh));
+    max-height: calc(100 * var(--vh));
+  }
+}
+
 body.fg-orange {
   --fg: var(--horseorange);
 }

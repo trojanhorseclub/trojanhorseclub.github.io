@@ -53,6 +53,11 @@ body {
 	font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
 
 		height: 100%;
+		@media (max-width: 767px) {
+			max-height: -webkit-calc(100 * var(--vh));
+			max-height: -moz-calc(100 * var(--vh));
+			max-height: calc(100 * var(--vh));
+		}
   	position: fixed;
 		overflow: scroll;
 
