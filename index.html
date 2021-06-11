@@ -795,10 +795,16 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		$("body").scroll(function() {
-			$("#horse").css("opacity", 1 - $("body").scrollTop() / 100);
-		});
+	<script type="text/javascript" defer='defer'>
+		var waitForJQuery = setInterval(function() {
+			if (typeof $ != 'undefined') {
+				$("body").scroll(function() {
+					$("#horse").css("opacity", 1 - $("body").scrollTop() / 100);
+				});
+				clearInterval(waitForJQuery);
+			}
+		}, 10);
+
 		if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
 			document.getElementById('body').className += ' safari';
 		}
