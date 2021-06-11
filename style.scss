@@ -127,10 +127,6 @@ p {
 	margin-bottom: 1.5em;
 }
 
-p, h2 {
-	-webkit-filter: drop-shadow(0 0 0.05rem rgba(0,0,0,25%));
-	filter: drop-shadow(0 0 0.05rem rgba(0,0,0,25%));
-}
 
 h2 {
 	font-size: 25px;
@@ -174,8 +170,9 @@ h2 {
 		-webkit-transform: translate3d(-50%,0%,0);
 		-moz-transform: translate3d(-50%,0%,0);
 		transform: translate3d(-50%,0%,0);
-		-webkit-filter: drop-shadow(0 0 0.25rem var(--fg));
-		filter: drop-shadow(0 0 0.25rem var(--fg));
+
+		-webkit-filter: drop-shadow(0 0 4px var(--fg));
+		filter: drop-shadow(0 0 4px var(--fg));
 
 		@media (max-width: 767px) {
 			font-size: 24vw;
@@ -186,15 +183,15 @@ h2 {
 
 	svg {
 		width: 100vw;
-		-webkit-filter: drop-shadow(0 0 0.25rem var(--fg));
-		filter: drop-shadow(0 0 0.25rem var(--fg));
-		position: absolute;
 		top: 25%;
 		left: 50%;
+		position: absolute;
 		-webkit-transform: translate3d(-50%,-50%,0);
 		-moz-transform: translate3d(-50%,-50%,0);
 		transform: translate3d(-50%,-50%,0);
 		will-change: opacity;
+		-webkit-filter: drop-shadow(0 0 4px var(--fg));
+		filter: drop-shadow(0 0 4px var(--fg));
 
 		@media (max-width: 767px) {
 			width: unset;
@@ -214,6 +211,14 @@ h2 {
 	@media (max-width: 767px) {
 		font-size: 2rem;
 	}
+
+	-webkit-filter: drop-shadow(0 0 0.06rem rgba(0,0,0,25%));
+	filter: drop-shadow(0 0 0.06rem rgba(0,0,0,25%));
+	.safari & {
+		-webkit-filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+		filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+	}
+
 	.trojan {
 		font-weight: bold;
 	}
@@ -244,6 +249,13 @@ h2 {
 
 	margin-top: 20px;
 
+	-webkit-filter: drop-shadow(0 0 0.04rem rgba(0,0,0,25%));
+	filter: drop-shadow(0 0 0.04rem rgba(0,0,0,25%));
+	.safari & {
+		-webkit-filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+		filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+	}
+
 	@media (max-width: 767px) {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -260,14 +272,10 @@ h2 {
 		font-size: 1.3rem;
 	}
 
-	p, span {
-		-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-		filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-	}
 
 	.clients {
 		width: 100%;
-		// max-width: 1300px;
+
 		p {
 			margin-bottom: 0.5em;
 		}
@@ -282,20 +290,29 @@ h2 {
 			column-gap: 10px;
 			word-wrap: break-word;
 
+			li {
+				display: inline;
+				list-style: none;
+				margin-right: 5px;
+
+				p {
+					display: inline;
+					margin: 0;
+				}
+			}
+
 			.country {
+				-webkit-transform: translate3d(0,0,0);
+				-moz-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+				will-change: auto;
+				display:inline-block;
 				text-transform: uppercase;
 				vertical-align: super;
 				font-size: 0.8em;
 				margin-right: 7px;
+				margin-left: 3px;
 			}
-		}
-		li {
-			display: inline-block;
-			margin-right: 5px;
-			p {
-				display: inline-block;
-			}
-
 		}
 		.portfolio {
 			margin-top: 15px;
@@ -312,8 +329,6 @@ h2 {
 		}
 
 		a {
-			-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-			filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
 			margin-bottom: 5px;
     	display: inline-block;
 		}
@@ -334,6 +349,14 @@ footer {
 	position: relative;
 	padding: 50px 0 40px;
 	margin-top: 7vw;
+
+	-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
+	filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
+	.safari & {
+		-webkit-filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+		filter: drop-shadow(0 0 1px rgba(0,0,0,25%));
+	}
+
 
 	@media (max-width: 767px) {
 		margin-top: 0;
@@ -392,9 +415,6 @@ footer {
 
 			text-align: center;
 			font-size: 16px;
-
-			-webkit-filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
-			filter: drop-shadow(0 0 0.03rem rgba(0,0,0,25%));
 		}
 	}
 }
