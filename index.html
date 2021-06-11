@@ -804,8 +804,8 @@
 	<script type="text/javascript" defer='defer'>
 		var waitForJQuery = setInterval(function() {
 			if (typeof $ != 'undefined') {
-				$("body").scroll(function() {
-					$("#horse").css("opacity", 1 - $("body").scrollTop() / 100);
+				$("#main_wrapper").scroll(function() {
+					$("#horse").css("opacity", 1 - $("#main_wrapper").scrollTop() / 100);
 				});
 				clearInterval(waitForJQuery);
 			}

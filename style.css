@@ -38,6 +38,12 @@
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  html {
+    overflow: hidden;
+  }
+}
+
 body {
   background-color: #F9F9F9;
   margin: 0;
@@ -50,9 +56,16 @@ body {
 
 @media (max-width: 767px) {
   body {
-    max-height: -webkit-calc(100 * var(--vh));
-    max-height: -moz-calc(100 * var(--vh));
-    max-height: calc(100 * var(--vh));
+    position: fixed;
+    height: 100vh;
+    height: -webkit-calc(100 * var(--vh));
+    height: -moz-calc(100 * var(--vh));
+    height: calc(100 * var(--vh));
+    overflow: hidden;
+  }
+  body #main_wrapper {
+    overflow: scroll;
+    height: 100%;
   }
 }
 

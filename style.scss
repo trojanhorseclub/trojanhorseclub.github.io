@@ -46,6 +46,12 @@
 	  width: 100%;
 }
 
+@media (max-width: 767px) {
+	html {
+		overflow: hidden;
+	}
+}
+
 
 body {
 	background-color: #F9F9F9;
@@ -53,13 +59,23 @@ body {
 	font-family: 'GT America', 'Helvetica', 'Arial', sans-serif;
 
 		height: 100%;
-		@media (max-width: 767px) {
-			max-height: -webkit-calc(100 * var(--vh));
-			max-height: -moz-calc(100 * var(--vh));
-			max-height: calc(100 * var(--vh));
-		}
   	position: fixed;
 		overflow: scroll;
+		@media (max-width: 767px) {
+			position: fixed;
+			height: 100vh;
+			height: -webkit-calc(100 * var(--vh));
+			height: -moz-calc(100 * var(--vh));
+			height: calc(100 * var(--vh));
+			overflow: hidden;
+
+			#main_wrapper {
+				overflow: scroll;
+				height: 100%;
+			}
+		}
+
+
 
 	--fg: black;
 
